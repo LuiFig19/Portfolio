@@ -1,0 +1,32 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Optional: Uncomment if using Node.js for build tools
+# node_modules/
+# package-lock.json
+
+# Optional: Resume - Remove this line if you want to commit your resume
+# resume.pdf
+
+# Optional: Analytics config files with sensitive data
+# analytics-config.js
+
+# IMPORTANT: Do NOT ignore CNAME file (needed for custom domain)
+!CNAME
