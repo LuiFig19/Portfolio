@@ -16,38 +16,13 @@ if (typeof window !== "undefined") {
 const airSensorSlides = [
   {
     src: "/images/astrarmm-airsensor-top.png",
-    alt: "AstraRMM Air Sensor — top of board, ESP32-S3, regulators, antenna trace",
-    caption: "TOP — KICAD 3D",
+    alt: "Air Sensor PCB — top of board, ESP32-S3, regulators, antenna trace",
+    caption: "TOP VIEW",
   },
   {
     src: "/images/astrarmm-airsensor-bottom.png",
-    alt: "AstraRMM Air Sensor — bottom of board, showing capacitors, push buttons, and connector",
-    caption: "BOTTOM — KICAD 3D",
-  },
-  {
-    src: "/images/project-airquality-1.png",
-    alt: "AstraRMM Air Sensor — assembled enclosure with PoE RJ45",
-    caption: "ASSEMBLED — PoE/RJ45",
-  },
-  {
-    src: "/images/project-airquality-3.png",
-    alt: "Two AstraRMM Air Sensor enclosures",
-    caption: "FIELD UNITS",
-  },
-  {
-    src: "/images/project-airquality-4.png",
-    alt: "AstraRMM Air Sensor enclosures, USB-C visible",
-    caption: "USB-C CONFIG",
-  },
-  {
-    src: "/images/project-airquality-2.png",
-    alt: "AstraRMM Air Sensor — enclosure detail",
-    caption: "ENCLOSURE DETAIL",
-  },
-  {
-    src: "/images/project-airquality-5.png",
-    alt: "AstraRMM Air Sensor — alternate angle",
-    caption: "PRODUCT SHOT",
+    alt: "Air Sensor PCB — bottom of board, capacitors, push buttons, connector",
+    caption: "BOTTOM VIEW",
   },
 ];
 
@@ -160,8 +135,8 @@ export function SectionHardware() {
         <div data-fade className="mt-16 md:mt-20">
           <PCBSlideshow
             index="FEATURED · H-01"
-            title="Astra Air Sensor - custom KiCad PCB"
-            blurb="Two-layer board designed end to end: schematic, layout, fab, hand assembly, bring-up. ESP32-S3 next to a Sensirion SEN55 air-quality sensor; the whole thing runs off a single PoE 802.3af drop."
+            title="Air Sensor - custom KiCad PCB"
+            blurb="Two-layer board designed end to end: schematic, layout, fab, hand assembly, bring-up. ESP32-S3 next to a Sensirion SEN55 air-quality sensor; the whole thing runs off a single PoE 802.3af drop. The PCB itself - not yet in any finished product."
             spec={airSensorSpec}
             images={airSensorSlides}
           />
@@ -177,13 +152,13 @@ export function SectionHardware() {
           />
         </div>
 
-        {/* Project grid — the rest of the builds */}
+        {/* Finished products */}
         <div data-fade className="mt-16 md:mt-20">
           <div className="mb-6 flex items-center gap-3">
-            <MonoLabel variant="muted">MORE BUILDS</MonoLabel>
+            <MonoLabel variant="muted">PRODUCTS · IN THE FIELD</MonoLabel>
             <span className="h-px flex-1 bg-border" aria-hidden />
           </div>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((p) => (
               <ProjectCard key={p.id} project={p} />
             ))}

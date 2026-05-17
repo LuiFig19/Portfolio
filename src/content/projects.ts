@@ -18,12 +18,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "mesh-motion",
+    id: "mesh-motion-sensor",
     index: "H-03",
-    title: "Mesh Motion Network",
-    subtitle: "mmWave + Thread presence mesh",
+    title: "Mesh Motion Sensor",
+    subtitle: "mmWave + Thread presence node",
     blurb:
-      "Distributed presence-sensing network using commercial mmWave radar modules on a Thread mesh. Sub-second occupancy detection across whole-floor coverage without PIR blind spots. Built from COTS dev boards; firmware and 3D-printed enclosures by me.",
+      "Distributed presence-sensing node using commercial mmWave radar modules on a Thread mesh. Sub-second occupancy detection across whole-floor coverage without PIR blind spots. Built from COTS dev boards; firmware and 3D-printed enclosures by me.",
     tech: ["mmWave module", "ESP32", "Thread", "Border Router", "Matter"],
     status: "pilot",
     build: "module-build",
@@ -39,8 +39,31 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "network-monitor",
+    id: "astra-airsensor-product",
     index: "H-04",
+    title: "Astra Air Sensor",
+    subtitle: "Finished product — PoE air quality monitor",
+    blurb:
+      "The finished Air Sensor — Sensirion SEN55 inside a 3D-printed hex-vent enclosure, ESP32-S3, USB-C config, PoE/RJ45 uplink. Reports PM, VOC, CO₂, temperature, and humidity back to AstraRMM or any MQTT broker over a single drop.",
+    tech: ["ESP32-S3", "SEN55", "PoE 802.3af", "MQTT", "3D-printed enclosure"],
+    status: "pilot",
+    build: "module-build",
+    images: [
+      "/images/project-airquality-3.png",
+      "/images/project-airquality-1.png",
+      "/images/project-airquality-4.png",
+      "/images/project-airquality-2.png",
+      "/images/project-airquality-5.png",
+    ],
+    highlights: [
+      "Single PoE drop powers and reports the device",
+      "Hex-vent enclosure designed for stable airflow over the SEN55",
+      "MQTT and AstraRMM uplink, configured over USB-C",
+    ],
+  },
+  {
+    id: "network-monitor",
+    index: "H-05",
     title: "Network Monitoring Appliance",
     subtitle: "Drop-in MSP visibility box",
     blurb:

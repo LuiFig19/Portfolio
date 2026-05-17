@@ -34,7 +34,7 @@ export const sections = {
     eyebrow: "SILICON & SOLDER",
     headline: "Boards I designed and brought up.",
     body:
-      "Two custom KiCad PCBs - the Air Sensor and a drone flight controller - drawn from schematic to bring-up by me. The mmWave Motion node and Network Monitor are ESP32-S3 builds on commercial modules and dev boards, firmware and enclosure work mine. Everything runs today in a home lab.",
+      "Two custom KiCad PCBs at the top - the Air Sensor and a drone flight controller - drawn from schematic to bring-up by me. Below them, three finished products: the Mesh Motion Sensor, the Astra Air Sensor, and the Network Monitor. All ESP32-S3, all running today in a home lab.",
     stack: ["KiCad", "ESP32-S3", "C / C++", "PoE", "mmWave", "Thread", "BLE"],
   },
   platform: {
