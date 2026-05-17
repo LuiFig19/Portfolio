@@ -11,12 +11,12 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luis Figueroa — Hardware that ships. Networks that stay up.",
+  title: "Luis Figueroa - Hardware that ships. Networks that stay up.",
   description:
-    "Luis Figueroa is a hardware engineer and production lead in Orlando, FL — IoT devices in KiCad, ESP32 firmware, AstraRMM, and software that ships.",
+    "Luis Figueroa is a hardware engineer and production lead in Orlando, FL - IoT devices in KiCad, ESP32 firmware, AstraRMM, and software that ships.",
   metadataBase: new URL("https://luisfigueroa.com"),
   openGraph: {
-    title: "Luis Figueroa — Hardware & IT, Orlando FL",
+    title: "Luis Figueroa - Hardware & IT, Orlando FL",
     description:
       "Production IoT hardware, AstraRMM platform, and field IT for real clients. Based in Orlando, FL.",
     type: "website",

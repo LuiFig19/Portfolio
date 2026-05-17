@@ -5,7 +5,7 @@ import { sections } from "@/content/content";
 import { SectionShell } from "./SectionShell";
 import { MonoLabel } from "./MonoLabel";
 
-// Stylized network topology — workstations / servers / cloud / security tools,
+// Stylized network topology - workstations / servers / cloud / security tools,
 // with a subtle pulse along edges to show traffic.
 function Topology() {
   const [t, setT] = useState(0);

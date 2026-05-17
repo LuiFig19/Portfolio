@@ -31,7 +31,7 @@ export function Component3D({
     if (!g) return;
     const local = clamp((progressRef.current - comp.appearAt) / duration, 0, 1);
     const eased = easeOutCubic(local);
-    // Extrude upward from board top — scale Z from 0 to 1.
+    // Extrude upward from board top - scale Z from 0 to 1.
     g.scale.set(1, 1, Math.max(eased, 0.0001));
     g.visible = local > 0;
   });

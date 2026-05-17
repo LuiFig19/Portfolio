@@ -46,7 +46,7 @@ function CardSlideshow({ images, alt }: { images: string[]; alt: string }) {
         >
           <Image
             src={src}
-            alt={`${alt} — ${i + 1} of ${images.length}`}
+            alt={`${alt} - ${i + 1} of ${images.length}`}
             fill
             sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
             className="object-cover"
@@ -125,7 +125,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {project.images.length > 0 && (
-        <CardSlideshow images={project.images} alt={`${project.title} — ${project.subtitle}`} />
+        <CardSlideshow images={project.images} alt={`${project.title} - ${project.subtitle}`} />
       )}
 
       <h3 className="mt-5 font-display text-2xl tracking-tight text-fg md:text-3xl">

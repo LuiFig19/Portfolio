@@ -16,12 +16,12 @@ if (typeof window !== "undefined") {
 const airSensorSlides = [
   {
     src: "/images/astrarmm-airsensor-top.png",
-    alt: "Air Sensor PCB — top of board, ESP32-S3, regulators, antenna trace",
+    alt: "Air Sensor PCB - top of board, ESP32-S3, regulators, antenna trace",
     caption: "TOP VIEW",
   },
   {
     src: "/images/astrarmm-airsensor-bottom.png",
-    alt: "Air Sensor PCB — bottom of board, capacitors, push buttons, connector",
+    alt: "Air Sensor PCB - bottom of board, capacitors, push buttons, connector",
     caption: "BOTTOM VIEW",
   },
 ];
@@ -38,12 +38,12 @@ const airSensorSpec = [
 const flightControllerSlides = [
   {
     src: "/images/flight-controller-view-1.png",
-    alt: "Drone flight controller — MCU side, dense SMT, IMU, telemetry",
+    alt: "Drone flight controller - MCU side, dense SMT, IMU, telemetry",
     caption: "MCU SIDE",
   },
   {
     src: "/images/flight-controller-view-2.png",
-    alt: "Drone flight controller — power side, motor connections, battery sensing, LED",
+    alt: "Drone flight controller - power side, motor connections, battery sensing, LED",
     caption: "POWER SIDE",
   },
 ];
@@ -131,7 +131,7 @@ export function SectionHardware() {
           </div>
         </div>
 
-        {/* Featured PCB slideshows — full width */}
+        {/* Featured PCB slideshows - full width */}
         <div data-fade className="mt-16 md:mt-20">
           <PCBSlideshow
             index="FEATURED · H-01"

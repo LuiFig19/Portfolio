@@ -33,7 +33,7 @@ export const projects: Project[] = [
       "/images/project-motion-3.png",
     ],
     highlights: [
-      "Thread mesh — no hub-and-spoke choke points",
+      "Thread mesh - no hub-and-spoke choke points",
       "Radar instead of PIR, so no warm-body false negatives",
       "Roadmap: integrate with AstraRMM for facility analytics",
     ],
@@ -42,9 +42,9 @@ export const projects: Project[] = [
     id: "astra-airsensor-product",
     index: "H-04",
     title: "Astra Air Sensor",
-    subtitle: "Finished product — PoE air quality monitor",
+    subtitle: "Finished product - PoE air quality monitor",
     blurb:
-      "The finished Air Sensor — Sensirion SEN55 inside a 3D-printed hex-vent enclosure, ESP32-S3, USB-C config, PoE/RJ45 uplink. Reports PM, VOC, CO₂, temperature, and humidity back to AstraRMM or any MQTT broker over a single drop.",
+      "The finished Air Sensor - Sensirion SEN55 inside a 3D-printed hex-vent enclosure, ESP32-S3, USB-C config, PoE/RJ45 uplink. Reports PM, VOC, CO₂, temperature, and humidity back to AstraRMM or any MQTT broker over a single drop.",
     tech: ["ESP32-S3", "SEN55", "PoE 802.3af", "MQTT", "3D-printed enclosure"],
     status: "pilot",
     build: "module-build",

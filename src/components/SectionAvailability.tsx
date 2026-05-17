@@ -52,13 +52,13 @@ export function SectionAvailability() {
         <div className="flex items-center gap-3">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-status-ok" aria-hidden />
           <MonoLabel variant="muted" bracket={false}>
-            AVAILABILITY — OPEN TO INBOUND
+            AVAILABILITY - OPEN TO INBOUND
           </MonoLabel>
         </div>
         <div className="flex items-center gap-3">
           <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
           <MonoLabel variant="muted" bracket={false}>
-            LOCATION — ORLANDO, FL · REMOTE OK
+            LOCATION - ORLANDO, FL · REMOTE OK
           </MonoLabel>
         </div>
       </div>

@@ -12,8 +12,8 @@ export type SlideshowImage = {
 };
 
 type Props = {
-  index: string;       // e.g. "FEATURED — H-01"
-  title: string;       // e.g. "AstraRMM Air Sensor — Custom KiCad PCB"
+  index: string;       // e.g. "FEATURED - H-01"
+  title: string;       // e.g. "AstraRMM Air Sensor - Custom KiCad PCB"
   blurb: string;
   spec: { label: string; value: string }[];
   images: SlideshowImage[];
@@ -119,7 +119,7 @@ export function PCBSlideshow({
 
           {/* below-image caption row */}
           <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
-            <MonoLabel variant="muted">RENDERED — KICAD 3D VIEW</MonoLabel>
+            <MonoLabel variant="muted">RENDERED - KICAD 3D VIEW</MonoLabel>
             <MonoLabel variant="muted">FN-AIO1 · REV.A</MonoLabel>
           </div>
         </div>

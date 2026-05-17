@@ -5,7 +5,7 @@ import { sections } from "@/content/content";
 import { SectionShell } from "./SectionShell";
 import { MonoLabel } from "./MonoLabel";
 
-// Stylized dashboard mockup — fake telemetry that ticks on a timer so the section
+// Stylized dashboard mockup - fake telemetry that ticks on a timer so the section
 // feels live without pulling real data.
 function DashboardMock() {
   return (

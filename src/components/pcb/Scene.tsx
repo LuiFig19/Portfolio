@@ -109,10 +109,10 @@ function BoardOutlineDraw({ progressRef }: { progressRef: MutableRefObject<numbe
   useFrame(({ clock }) => {
     const mat = ref.current?.material;
     if (!mat) return;
-    // intro draw — first 1.5 seconds of mount
+    // intro draw - first 1.5 seconds of mount
     const introT = clamp(clock.elapsedTime / 1.5, 0, 1);
     const intro = smoothstep(introT);
-    // fade based on scroll — disappear past 0.6
+    // fade based on scroll - disappear past 0.6
     const fade = clamp(1 - (progressRef.current - 0.55) / 0.2, 0, 1);
     const drawn = intro * perimeter;
     mat.dashSize = Math.max(drawn, 0.0001);
@@ -121,7 +121,7 @@ function BoardOutlineDraw({ progressRef }: { progressRef: MutableRefObject<numbe
     mat.needsUpdate = true;
   });
 
-  // rounded rect outline points — simplified to a thin inset rectangle
+  // rounded rect outline points - simplified to a thin inset rectangle
   const inset = 0.18;
   const w = 8 - inset * 2;
   const h = 5 - inset * 2;

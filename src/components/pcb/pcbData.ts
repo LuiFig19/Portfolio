@@ -1,5 +1,5 @@
 // Procedural PCB definition. Edit positions/paths to re-route the board.
-// All coordinates are in board space — origin at center, X right, Y up.
+// All coordinates are in board space - origin at center, X right, Y up.
 // Board: 8 wide x 5 tall. Z is the extrusion direction (out of board).
 
 export type Vec2 = [number, number];
@@ -39,7 +39,7 @@ export const BOARD = {
   height: 5,
   cornerRadius: 0.22,
   thickness: 0.1,
-  // FR4 substrate — very dark slate, faintly warm
+  // FR4 substrate - very dark slate, faintly warm
   color: "#0E1014",
   // Soldermask sheen on edge bevel
   edgeColor: "#1A1C22",
@@ -172,7 +172,7 @@ export const vias: PcbVia[] = [
 export const silkscreens: { position: Vec2; text: string; appearAt: number }[] = [
   { position: [-2.3, 1.7], text: "U1  ESP32-S3", appearAt: 0.48 },
   { position: [1.9, 2.0], text: "U2  SEN55", appearAt: 0.52 },
-  { position: [3.05, 0.6], text: "J1  RJ45 — POE", appearAt: 0.62 },
+  { position: [3.05, 0.6], text: "J1  RJ45 - POE", appearAt: 0.62 },
   { position: [-3.4, -1.78], text: "J2  USB-C", appearAt: 0.68 },
   { position: [-3.65, 2.25], text: "FN-AIO1  REV.A", appearAt: 0.0 },
   { position: [3.65, -2.25], text: "ORLANDO, FL", appearAt: 0.0 },
