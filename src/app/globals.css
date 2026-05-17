@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fontshare exposes proper @font-face rules at this CSS endpoint.
+   We pull Tasa Orbiter Display + Supreme from there; IBM Plex Mono comes
+   from next/font/google and is injected as --font-mono on <body>. */
+@import url("https://api.fontshare.com/v2/css?f[]=tasa-orbiter-display@400,500,600&f[]=supreme@300,400,500,600&display=swap");
+
+:root {
+  --font-display: "Tasa Orbiter Display", "Times New Roman", serif;
+  --font-sans: "Supreme", ui-sans-serif, system-ui, sans-serif;
+  /* --font-mono is set by next/font on <body> */
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: auto;
+  font-feature-settings: "ss01", "cv11";
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background-color: #0B0B0D;
+  color: #F5F4F1;
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(232, 160, 74, 0.35);
+  color: #F5F4F1;
+}
+
+/* Hairline divider helper */
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #25252A 50%, transparent 100%);
+}
+
+/* Focus styles */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #E8A04A;
+  outline-offset: 3px;
+}
+
+/* Subtle dotted grid texture used as page backdrop accent */
+.grid-bg {
+  background-image: radial-gradient(rgba(245, 244, 241, 0.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+}
+
+/* Reduce motion: kill heavy transitions and animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
