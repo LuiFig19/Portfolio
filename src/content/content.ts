@@ -41,9 +41,9 @@ export const sections = {
     id: "platform",
     index: "002",
     eyebrow: "SOFTWARE STACK",
-    headline: "The software the hardware reports to - also mine.",
+    headline: "The software the hardware reports to.",
     body:
-      "AstraRMM is a remote monitoring and management platform I built for MSP-style ops: agent deployment, endpoint telemetry, alerting, and a technician dashboard. TaskChrono is a SaaS tool for time tracking and reporting - shipped to a paying customer and still in active use. The devices on this page don't sit on a shelf; they report to software I also wrote.",
+      "AstraRMM is a remote monitoring and management platform I helped build for MSP-style ops: agent deployment, endpoint telemetry, alerting, and a technician dashboard. TaskChrono is a SaaS tool for time tracking and reporting, shipped to a paying customer and still in active use. The devices on this page don't sit on a shelf; they report to platforms I had a hand in.",
     stack: ["Next.js", "TypeScript", "Postgres", "WebSocket", "Docker", "REST"],
     products: [
       {
