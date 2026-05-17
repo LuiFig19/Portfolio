@@ -38,9 +38,9 @@ export const projects: Project[] = [
     title: "AstraRMM Monitoring Device",
     subtitle: "ESP32-S3 PoE telemetry node",
     blurb:
-      "Always-on telemetry node deployed inside client racks. Reports power, temperature, network reachability, and door state back to the AstraRMM platform.",
+      "Always-on telemetry node designed to live inside a network rack. Reports power, temperature, network reachability, and door state back to the AstraRMM platform.",
     tech: ["ESP32-S3", "PoE", "Ethernet PHY", "AstraRMM", "OTA", "Watchdog"],
-    status: "in-production",
+    status: "pilot",
     image: "/images/project-motion-2.png",
     highlights: [
       "Hardware watchdog + remote OTA from AstraRMM",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     blurb:
       "Distributed presence-sensing network using mmWave radar nodes on a Thread mesh. Sub-second occupancy detection across whole-floor coverage without PIR blind spots.",
     tech: ["mmWave", "Thread", "Border Router", "Matter", "Low-power MCU"],
-    status: "prototype",
+    status: "pilot",
     image: "/images/project-motion-3.png",
     highlights: [
       "Thread mesh — no hub-and-spoke choke points",

@@ -35,7 +35,7 @@ export function Nav() {
         <ul className="hidden items-center gap-7 md:flex">
           {nav.links.map((l) => (
             <li key={l.href} className="flex items-center gap-1.5">
-              <span className="font-mono text-[10px] tracking-mono text-fg-tertiary">{l.index}</span>
+              <span className="font-mono text-mono tracking-mono text-fg-tertiary">{l.index}</span>
               <a
                 href={l.href}
                 className="font-mono text-mono uppercase tracking-mono text-fg-secondary transition-colors duration-200 hover:text-fg"

@@ -40,10 +40,10 @@ const config: Config = {
         tighter: "-0.035em",
       },
       fontSize: {
-        "display-xl": ["clamp(3.5rem, 9vw, 8.5rem)", { lineHeight: "0.92", letterSpacing: "-0.035em" }],
-        "display-lg": ["clamp(2.5rem, 6vw, 5.5rem)", { lineHeight: "0.96", letterSpacing: "-0.03em" }],
-        "display-md": ["clamp(1.875rem, 4vw, 3.25rem)", { lineHeight: "1.04", letterSpacing: "-0.02em" }],
-        mono: ["0.6875rem", { lineHeight: "1", letterSpacing: "0.08em" }],
+        "display-xl": ["clamp(2.75rem, 6.4vw, 5.75rem)", { lineHeight: "1", letterSpacing: "-0.025em" }],
+        "display-lg": ["clamp(2.25rem, 4.8vw, 4.25rem)", { lineHeight: "1.02", letterSpacing: "-0.022em" }],
+        "display-md": ["clamp(1.75rem, 3.4vw, 2.75rem)", { lineHeight: "1.08", letterSpacing: "-0.018em" }],
+        mono: ["0.75rem", { lineHeight: "1.1", letterSpacing: "0.06em" }],
       },
       maxWidth: {
         page: "1440px",

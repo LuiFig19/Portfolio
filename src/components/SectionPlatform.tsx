@@ -18,7 +18,7 @@ function DashboardMock() {
             ASTRARMM / FLEET OVERVIEW
           </MonoLabel>
         </div>
-        <MonoLabel variant="muted">LIVE — 5s POLL</MonoLabel>
+        <MonoLabel variant="muted">UI MOCK</MonoLabel>
       </div>
 
       {/* stat row */}

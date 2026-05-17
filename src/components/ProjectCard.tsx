@@ -82,7 +82,7 @@ export function ProjectCard({ project }: { project: Project }) {
         {project.tech.map((t) => (
           <span
             key={t}
-            className="border border-border px-2 py-1 font-mono text-[10px] uppercase tracking-mono text-fg-tertiary"
+            className="border border-border px-2 py-1 font-mono text-mono uppercase tracking-mono text-fg-tertiary"
           >
             {t}
           </span>

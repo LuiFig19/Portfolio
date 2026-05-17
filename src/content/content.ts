@@ -18,9 +18,9 @@ export const site = {
 export const hero = {
   label: "[ FN-AIO1 — REV.A — ORLANDO, FL ]",
   topLabel: "[ INDEX — 2026.01 ]",
-  headline: ["Hardware that ships.", "Networks that stay up."],
+  headline: ["Hardware that ships.", "Code that runs."],
   subhead:
-    "I'm Luis — an IT field technician and hardware engineer in Orlando, building production IoT devices and running managed IT for real clients.",
+    "I'm Luis — a welder by day in Orlando, and a self-taught hardware engineer the rest of the time. I design PCBs in KiCad, write firmware in C, and ship the software the devices report to. Out of a home lab.",
   ctas: [
     { label: "SEE THE WORK", href: "#hardware", variant: "primary" as const },
     { label: "DOWNLOAD RESUME", href: site.resumePath, variant: "ghost" as const, download: true },
@@ -32,29 +32,29 @@ export const sections = {
     id: "hardware",
     index: "001",
     eyebrow: "SILICON & SOLDER",
-    headline: "Production hardware, designed end to end.",
+    headline: "Boards I designed, fabricated, and brought up.",
     body:
-      "PCB design in KiCad. Firmware in C and C++. Enclosure prototyping, BOM sourcing, and pilot deployments in real MSP environments. Every device on this page has been built, flashed, and run in production — not just rendered.",
-    stack: ["KiCad", "ESP32-S3", "STM32", "C / C++", "PoE", "Thread", "BLE"],
+      "PCB design in KiCad, firmware in C, enclosure prototyping, BOM sourcing — every device on this page was drawn, routed, fabbed, hand-assembled, flashed, and brought up by me. They run today in a home lab, ready to deploy.",
+    stack: ["KiCad", "ESP32-S3", "C / C++", "PoE", "Thread", "BLE"],
   },
   platform: {
     id: "platform",
     index: "002",
     eyebrow: "SOFTWARE STACK",
-    headline: "The software that the hardware reports to.",
+    headline: "The software the hardware reports to — also mine.",
     body:
-      "AstraRMM is a custom remote monitoring and management platform built for MSP operations — agent deployment, endpoint telemetry, real-time alerting, technician dashboards. TaskChrono is a delivered SaaS product for time tracking and reporting. The hardware doesn't sit on a shelf; it reports to software I also wrote.",
+      "AstraRMM is a remote monitoring and management platform I built for MSP-style ops: agent deployment, endpoint telemetry, alerting, and a technician dashboard. TaskChrono is a SaaS tool for time tracking and reporting — shipped to a paying customer and still in active use. The devices on this page don't sit on a shelf; they report to software I also wrote.",
     stack: ["Next.js", "TypeScript", "Postgres", "WebSocket", "Docker", "REST"],
     products: [
       {
         name: "AstraRMM",
         line: "Remote monitoring & management",
-        detail: "Agent deployment, endpoint telemetry, real-time alerting, technician dashboards.",
+        detail: "Agent deployment, endpoint telemetry, alerting, technician dashboard. Drives the hardware above.",
       },
       {
         name: "TaskChrono",
-        line: "Delivered SaaS product",
-        detail: "Time tracking and reporting — shipped, paid, in production.",
+        line: "SaaS — shipped",
+        detail: "Time tracking and reporting. Delivered to a paying customer, still in use.",
       },
     ],
   },
@@ -62,18 +62,18 @@ export const sections = {
     id: "field",
     index: "003",
     eyebrow: "ON THE GROUND",
-    headline: "Tier 2 escalation. Real client environments.",
+    headline: "Production lead by day. Builder the rest of the time.",
     body:
-      "Co-founder and field technician at Fanatic Node, an Orlando-based MSP. Microsoft 365 administration, Entra ID, Conditional Access, endpoint monitoring with Huntress and AstraRMM, Comet Backup, on-site assessments, and documentation that holds up under audit.",
+      "Production lead at Ravens Marine — running the welding floor and bringing junior welders up to qualified. Evenings and weekends: contract field IT for Fanatic Node — Windows recovery, drive and RAM upgrades, BitLocker resets, admin-password recovery, PoE camera installs. The home lab in the background is where the PCBs above actually live.",
     stack: [
-      "Microsoft 365",
-      "Entra ID",
-      "Conditional Access",
-      "Huntress",
-      "AstraRMM",
-      "Comet Backup",
-      "Meraki",
+      "Production leadership",
+      "Welding",
+      "Windows recovery",
+      "BitLocker",
+      "Drive / RAM upgrades",
+      "PoE camera installs",
       "UniFi",
+      "Home lab",
     ],
   },
   availability: {
@@ -88,21 +88,21 @@ export const sections = {
       "Embedded systems (firmware + low-level)",
       "Hardware test & validation",
       "Field deployment engineering",
-      "IT infrastructure & MSP operations",
+      "IT infrastructure",
     ],
     bring: [
-      "PCB design and bring-up in production",
-      "Firmware across ESP32, STM32, RP2040",
-      "Full-stack software for the devices I design",
-      "Field experience with real clients, real downtime, real audits",
-      "Documentation that an outside team can actually pick up",
+      "Four PCBs designed in KiCad, fabricated, and brought up",
+      "Firmware in C / C++ on ESP32-S3",
+      "Full-stack software for the devices I design — agents, server, dashboard",
+      "Production-floor leadership at Ravens Marine — bringing junior welders to qualified",
+      "Hands-on field IT: Windows recovery, networks, camera installs",
     ],
   },
 } as const;
 
 export const closing = {
   eyebrow: "[ CONTACT — INBOUND OPEN ]",
-  headline: ["Let's build something", "that works."],
+  headline: ["Let's build something", "that actually works."],
   ctas: [
     { label: "EMAIL", value: site.email, href: `mailto:${site.email}` },
     { label: "LINKEDIN", value: site.linkedinHandle, href: site.linkedin },
@@ -115,7 +115,7 @@ export const footer = {
   location: site.location,
   version: `[ ${site.version} ]`,
   copy: `© ${new Date().getFullYear()} ${site.name}.`,
-  note: "Built in KiCad, then in Next.js.",
+  note: "Welder, hardware engineer, software engineer. In that order.",
 } as const;
 
 export const nav = {
