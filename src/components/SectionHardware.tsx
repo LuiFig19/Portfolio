@@ -31,8 +31,30 @@ const airSensorSpec = [
   { label: "MCU", value: "ESP32-S3" },
   { label: "POWER", value: "PoE 802.3af" },
   { label: "SENSOR", value: "Sensirion SEN55" },
-  { label: "DESIGN", value: "KiCad · 2-LAYER" },
-  { label: "FAB", value: "BUILT · BROUGHT UP" },
+  { label: "DESIGN", value: "KICAD" },
+  { label: "FAB", value: "BUILT" },
+];
+
+const flightControllerSlides = [
+  {
+    src: "/images/flight-controller-view-1.png",
+    alt: "Drone flight controller — MCU side, dense SMT, IMU, telemetry",
+    caption: "MCU SIDE",
+  },
+  {
+    src: "/images/flight-controller-view-2.png",
+    alt: "Drone flight controller — power side, motor connections, battery sensing, LED",
+    caption: "POWER SIDE",
+  },
+];
+
+const flightControllerSpec = [
+  { label: "STATUS", value: "PROTOTYPE" },
+  { label: "PURPOSE", value: "DRONE FC" },
+  { label: "I/O", value: "MOTORS · BATTERY · IMU" },
+  { label: "FORM", value: "SQUARE · 4 × MOUNT" },
+  { label: "DESIGN", value: "KICAD" },
+  { label: "FAB", value: "BUILT" },
 ];
 
 export function SectionHardware() {
@@ -109,14 +131,24 @@ export function SectionHardware() {
           </div>
         </div>
 
-        {/* Featured PCB slideshow — full width */}
+        {/* Featured PCB slideshows — full width */}
         <div data-fade className="mt-16 md:mt-20">
           <PCBSlideshow
             index="FEATURED · H-01"
-            title="Astra Air Sensor — custom KiCad PCB"
+            title="Astra Air Sensor - custom KiCad PCB"
             blurb="Two-layer board designed end to end: schematic, layout, fab, hand assembly, bring-up. ESP32-S3 next to a Sensirion SEN55 air-quality sensor; the whole thing runs off a single PoE 802.3af drop."
             spec={airSensorSpec}
             images={airSensorSlides}
+          />
+        </div>
+
+        <div data-fade className="mt-16 md:mt-20">
+          <PCBSlideshow
+            index="FEATURED · H-02"
+            title="Drone Flight Controller - custom KiCad PCB"
+            blurb="Compact flight controller designed for a modern drone build. Custom PCB with onboard IMU, motor outputs, battery sensing, and telemetry, all laid out in KiCad. Schematic, layout, fab, and assembly by me."
+            spec={flightControllerSpec}
+            images={flightControllerSlides}
           />
         </div>
 
