@@ -23,7 +23,7 @@ const resume = {
   ],
   version: "V.2026.01",
   summary:
-    "Self-taught hardware engineer. Day job in production fabrication, home lab the rest of the time. PCBs in KiCad, firmware in C, full-stack software, field IT on weekends. Four IoT devices designed and brought up, one SaaS product shipped to a paying customer, and a managed-IT venture co-founded with one partner.",
+    "Self-taught hardware engineer. Day job in production fabrication, home lab the rest of the time. PCBs in KiCad, firmware in C, full-stack software, field IT on weekends. Four IoT devices designed and brought up, one SaaS product shipped to a paying customer, and AstraRMM co-founded with one partner.",
   experience: [
     {
       role: "PRODUCTION LEAD",
@@ -38,14 +38,14 @@ const resume = {
     },
     {
       role: "CO-FOUNDER & HARDWARE ENGINEER",
-      company: "Fanatic Node & AstraRMM (with Jeremiah Rivera)",
+      company: "AstraRMM (with Jeremiah Rivera)",
       location: "Orlando, FL  /  weekends and free time",
       dates: "2025 - PRESENT",
       bullets: [
-        "Co-founded Fanatic Node, an Orlando managed-IT venture, and AstraRMM, the custom RMM platform behind it: agents, server, real-time alerting, technician dashboard.",
+        "Co-founded AstraRMM, a custom RMM platform: agents, server, real-time alerting, technician dashboard.",
         "Designed and built AstraRMM IoT hardware - Air Sensor, mmWave Motion Sensor, and Network Monitor - on ESP32-S3 with commercial mmWave modules: custom C/C++ firmware, hand wiring and soldering, 3D-printed enclosures, bring-up and deployment.",
         "Custom KiCad PCB for the Air Sensor (schematic, layout, fab, assembly). Flight Controller PCB designed separately in KiCad. Motion and network nodes built from COTS dev boards and modules, not custom PCBs.",
-        "Field IT for small businesses: Windows recovery, BitLocker, drive and RAM swaps, M365 and Entra ID admin, Conditional Access, Huntress EDR, Comet Backup, PoE camera installs.",
+        "Contract field IT through Fanatic Node for small businesses: Windows recovery, BitLocker, drive and RAM swaps, M365 and Entra ID admin, Conditional Access, Huntress EDR, Comet Backup, PoE camera installs.",
       ],
     },
   ],
