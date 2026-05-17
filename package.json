@@ -1,6 +1,23 @@
 {
   "name": "luisfigueroa-site",
   "version": "2026.01.0",
+  "description": "Personal portfolio — IoT hardware, AstraRMM, scroll-driven PCB hero. Orlando, FL.",
+  "homepage": "https://luifigueroa.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuiFig19/luifigueroa-site.git"
+  },
+  "author": "Luis Figueroa <luifig19@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "iot",
+    "esp32",
+    "hardware",
+    "embedded",
+    "threejs"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
