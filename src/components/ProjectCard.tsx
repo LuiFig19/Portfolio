@@ -22,26 +22,31 @@ export function ProjectCard({ project }: { project: Project }) {
       <span className="pointer-events-none absolute bottom-0 left-0 h-3 w-3 border-b border-l border-accent/60" aria-hidden />
       <span className="pointer-events-none absolute bottom-0 right-0 h-3 w-3 border-b border-r border-accent/60" aria-hidden />
 
-      <div className="flex items-center justify-between">
-        <MonoLabel variant="muted">{`${project.index} — ${project.title.toUpperCase()}`}</MonoLabel>
-        <span
-          className={clsx(
-            "inline-flex items-center gap-1.5 font-mono text-mono uppercase tracking-mono",
-            status.tone === "ok" && "text-status-ok",
-            status.tone === "accent" && "text-accent",
-            status.tone === "muted" && "text-fg-tertiary",
-          )}
-        >
+      <div className="flex items-center justify-between gap-3">
+        <MonoLabel variant="muted">{`${project.index} · ${project.title.toUpperCase()}`}</MonoLabel>
+        <div className="flex items-center gap-3">
+          <MonoLabel variant="muted" bracket={false}>
+            {project.build === "custom-pcb" ? "CUSTOM PCB" : "MODULE BUILD"}
+          </MonoLabel>
           <span
             className={clsx(
-              "inline-block h-1.5 w-1.5 rounded-full",
-              status.tone === "ok" && "bg-status-ok",
-              status.tone === "accent" && "bg-accent",
-              status.tone === "muted" && "bg-fg-tertiary",
+              "inline-flex items-center gap-1.5 font-mono text-mono uppercase tracking-mono",
+              status.tone === "ok" && "text-status-ok",
+              status.tone === "accent" && "text-accent",
+              status.tone === "muted" && "text-fg-tertiary",
             )}
-          />
-          {status.label}
-        </span>
+          >
+            <span
+              className={clsx(
+                "inline-block h-1.5 w-1.5 rounded-full",
+                status.tone === "ok" && "bg-status-ok",
+                status.tone === "accent" && "bg-accent",
+                status.tone === "muted" && "bg-fg-tertiary",
+              )}
+            />
+            {status.label}
+          </span>
+        </div>
       </div>
 
       {project.image && (

@@ -32,10 +32,10 @@ export const sections = {
     id: "hardware",
     index: "001",
     eyebrow: "SILICON & SOLDER",
-    headline: "Boards I designed, fabricated, and brought up.",
+    headline: "Boards I designed and brought up.",
     body:
-      "PCB design in KiCad, firmware in C, enclosure prototyping, BOM sourcing — every device on this page was drawn, routed, fabbed, hand-assembled, flashed, and brought up by me. They run today in a home lab, ready to deploy.",
-    stack: ["KiCad", "ESP32-S3", "C / C++", "PoE", "Thread", "BLE"],
+      "Custom KiCad PCB on the Air Sensor — schematic, layout, fab, hand-assembly, bring-up. The mmWave Motion node and Network Monitor are ESP32-S3 builds on commercial modules and dev boards, firmware-and-enclosure work by me. Everything runs today in a home lab.",
+    stack: ["KiCad", "ESP32-S3", "C / C++", "PoE", "mmWave", "Thread", "BLE"],
   },
   platform: {
     id: "platform",
