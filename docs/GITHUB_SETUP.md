@@ -1,27 +1,28 @@
-# GitHub profile setup (LuiFig19)
+# GitHub setup (LuiFig19)
 
-Your resume and site link to **github.com/LuiFig19**, but code currently lives on **DegenLui/Portfolio**. Align them once so reviewers see work at the handle you advertise.
+All public code should live under **github.com/LuiFig19**. Your local remote is already set to `LuiFig19/luifigueroa-site`.
 
-## 1. Profile README (shows on github.com/LuiFig19)
+## 1. Move the portfolio off DegenLui (pick one)
 
-1. On GitHub, create a **new public repo** named exactly `LuiFig19` (same as your username).
-2. Copy `profile-readme/README.md` from this project into that repo as `README.md`.
+**Option A — Transfer (keeps stars, issues, Vercel link)**
+
+1. Log into **DegenLui** → open **Portfolio** → **Settings** → **Danger zone** → **Transfer ownership**.
+2. New owner: **LuiFig19** (accept the email invite on the LuiFig19 account).
+3. Still in Settings → rename repo to **`luifigueroa-site`**.
+4. In this folder: `git push -u origin main`
+
+**Option B — New repo (fresh)**
+
+1. Log into **LuiFig19** → **New repository** → name **`luifigueroa-site`**, public, **no** README/license.
+2. In this folder: `git push -u origin main`
+
+After either option, reconnect Vercel to **LuiFig19/luifigueroa-site** if deploys stop.
+
+## 2. Profile README (shows on github.com/LuiFig19)
+
+1. Create a **new public repo** named exactly **`LuiFig19`** (same as username).
+2. Copy `profile-readme/README.md` into that repo as `README.md`.
 3. Commit to `main`.
-
-## 2. Move the portfolio repo to LuiFig19
-
-**Option A — Transfer (easiest)**
-
-1. GitHub → **DegenLui/Portfolio** → Settings → Danger zone → **Transfer ownership**.
-2. New owner: `LuiFig19`.
-3. Rename repo to `luifigueroa-site` (Settings → General → Repository name).
-4. Locally: `git remote set-url origin https://github.com/LuiFig19/luifigueroa-site.git`
-
-**Option B — Fresh push**
-
-1. Create **LuiFig19/luifigueroa-site** (empty, no README).
-2. From this folder: `git remote add lui https://github.com/LuiFig19/luifigueroa-site.git`
-3. `git push lui main`
 
 ## 3. Profile fields (github.com/settings/profile)
 
@@ -47,7 +48,7 @@ On the repo **About** box (gear icon):
 - **Website:** https://luifigueroa.com
 - **Topics:** `portfolio` `nextjs` `typescript` `iot` `esp32` `hardware` `embedded` `threejs`
 
-## 6. Optional cleanup
+## 6. Retire DegenLui
 
-- Archive or make private old test repos on **DegenLui** if you retire that account.
-- Point Vercel deploy to **LuiFig19/luifigueroa-site** after transfer.
+- Leave **DegenLui/Portfolio** empty after transfer (GitHub redirects old URLs for a while).
+- Archive or delete the **DegenLui** account when you no longer need it.
