@@ -23,7 +23,7 @@ const resume = {
   ],
   version: "V.2026.01",
   summary:
-    "Self-taught hardware engineer. Day job in production fabrication, home lab the rest of the time. PCBs in KiCad, firmware in C, full-stack software, field IT on weekends. Four IoT devices designed and brought up, one SaaS product shipped to a paying customer, and AstraRMM co-founded with one partner.",
+    "Self-taught hardware engineer. Day job in production fabrication, home lab the rest of the time. PCBs in KiCad, firmware in C, full-stack software, field IT on weekends. Four IoT devices designed and brought up, one SaaS product shipped to a paying customer, and co-founded AstraRMM.",
   experience: [
     {
       role: "PRODUCTION LEAD",
@@ -38,7 +38,7 @@ const resume = {
     },
     {
       role: "CO-FOUNDER & HARDWARE ENGINEER",
-      company: "AstraRMM (with Jeremiah Rivera)",
+      company: "AstraRMM",
       location: "Orlando, FL  /  weekends and free time",
       dates: "2025 - PRESENT",
       bullets: [
