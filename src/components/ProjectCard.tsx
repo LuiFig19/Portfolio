@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import { MonoLabel } from "./MonoLabel";
@@ -11,6 +12,80 @@ const statusCopy: Record<Project["status"], { label: string; tone: "ok" | "accen
   prototype: { label: "PROTOTYPE", tone: "muted" },
   shipped: { label: "SHIPPED", tone: "ok" },
 };
+
+function CardSlideshow({ images, alt }: { images: string[]; alt: string }) {
+  const [active, setActive] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    if (paused || images.length < 2) return;
+    timerRef.current = setTimeout(() => {
+      setActive((i) => (i + 1) % images.length);
+    }, 5500);
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [active, paused, images.length]);
+
+  if (images.length === 0) return null;
+
+  return (
+    <div
+      className="group relative mt-5 aspect-[16/10] w-full overflow-hidden border border-border bg-bg-subtle"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      {images.map((src, i) => (
+        <div
+          key={src}
+          className={clsx(
+            "absolute inset-0 transition-opacity duration-700 ease",
+            i === active ? "opacity-100" : "opacity-0",
+          )}
+        >
+          <Image
+            src={src}
+            alt={`${alt} — ${i + 1} of ${images.length}`}
+            fill
+            sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+            priority={i === 0}
+          />
+        </div>
+      ))}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(11,11,13,0)_55%,rgba(11,11,13,0.55)_100%)]"
+      />
+
+      {images.length > 1 && (
+        <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-1.5">
+          {images.map((src, i) => (
+            <button
+              key={`dot-${src}`}
+              type="button"
+              onClick={() => setActive(i)}
+              aria-label={`Image ${i + 1} of ${images.length}`}
+              className={clsx(
+                "h-1 rounded-full transition-all duration-300",
+                i === active ? "w-6 bg-accent" : "w-1.5 bg-fg-tertiary/60 hover:bg-fg-tertiary",
+              )}
+            />
+          ))}
+        </div>
+      )}
+
+      {images.length > 1 && (
+        <div className="pointer-events-none absolute right-3 top-3 z-10">
+          <span className="font-mono text-[10px] uppercase tracking-mono text-fg-tertiary">
+            {String(active + 1).padStart(2, "0")}/{String(images.length).padStart(2, "0")}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function ProjectCard({ project }: { project: Project }) {
   const status = statusCopy[project.status];
@@ -49,20 +124,8 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
 
-      {project.image && (
-        <div className="relative mt-5 aspect-[16/10] w-full overflow-hidden border border-border bg-bg-subtle">
-          <Image
-            src={project.image}
-            alt={`${project.title} — ${project.subtitle}`}
-            fill
-            sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
-            className="object-cover opacity-80 mix-blend-luminosity transition-all duration-700 group-hover:opacity-100 group-hover:mix-blend-normal"
-          />
-          <div
-            aria-hidden
-            className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,11,13,0)_55%,rgba(11,11,13,0.55)_100%)]"
-          />
-        </div>
+      {project.images.length > 0 && (
+        <CardSlideshow images={project.images} alt={`${project.title} — ${project.subtitle}`} />
       )}
 
       <h3 className="mt-5 font-display text-2xl tracking-tight text-fg md:text-3xl">

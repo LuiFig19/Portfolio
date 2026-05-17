@@ -87,7 +87,7 @@ export function PCBSlideshow({
                   alt={img.alt}
                   fill
                   sizes="(min-width: 1024px) 720px, 100vw"
-                  className="object-contain"
+                  className="object-cover"
                   priority={i === 0}
                 />
               </button>

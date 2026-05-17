@@ -15,14 +15,39 @@ if (typeof window !== "undefined") {
 
 const airSensorSlides = [
   {
-    src: "/images/astrarmm-airsensor-bottom.png",
-    alt: "AstraRMM Air Sensor — bottom of board, showing capacitors, push buttons, and connector",
-    caption: "BOTTOM VIEW",
+    src: "/images/astrarmm-airsensor-top.png",
+    alt: "AstraRMM Air Sensor — top of board, ESP32-S3, regulators, antenna trace",
+    caption: "TOP — KICAD 3D",
   },
   {
-    src: "/images/astrarmm-airsensor-top.png",
-    alt: "AstraRMM Air Sensor — top of board, ESP32-S3, regulators, and antenna trace",
-    caption: "TOP VIEW",
+    src: "/images/astrarmm-airsensor-bottom.png",
+    alt: "AstraRMM Air Sensor — bottom of board, showing capacitors, push buttons, and connector",
+    caption: "BOTTOM — KICAD 3D",
+  },
+  {
+    src: "/images/project-airquality-1.png",
+    alt: "AstraRMM Air Sensor — assembled enclosure with PoE RJ45",
+    caption: "ASSEMBLED — PoE/RJ45",
+  },
+  {
+    src: "/images/project-airquality-3.png",
+    alt: "Two AstraRMM Air Sensor enclosures",
+    caption: "FIELD UNITS",
+  },
+  {
+    src: "/images/project-airquality-4.png",
+    alt: "AstraRMM Air Sensor enclosures, USB-C visible",
+    caption: "USB-C CONFIG",
+  },
+  {
+    src: "/images/project-airquality-2.png",
+    alt: "AstraRMM Air Sensor — enclosure detail",
+    caption: "ENCLOSURE DETAIL",
+  },
+  {
+    src: "/images/project-airquality-5.png",
+    alt: "AstraRMM Air Sensor — alternate angle",
+    caption: "PRODUCT SHOT",
   },
 ];
 
